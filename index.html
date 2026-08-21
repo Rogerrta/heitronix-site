@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heitronix.tech — Inovação e Tecnologia</title>
+  <meta name="description" content="Projetos IoT, Automação Residencial, Automação Industrial e Criação de Sites." />
+  <link rel="icon" href="/favicon_32x32.png" sizes="32x32">
+  <link rel="icon" href="/favicon_64x64.png" sizes="64x64">
+  <link rel="icon" href="/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0A1A2F] text-[#E5E7EB]">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 backdrop-blur border-b border-white/10" style="background-color:rgba(10,26,47,0.6)">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <img src="/assets/logo.png" alt="Heitronix.tech" class="h-8 w-auto" />
+        <span class="text-xl font-semibold tracking-tight text-white group-hover:opacity-80 transition">Heitronix.tech</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#pilares" class="text-white/80 hover:text-white">Soluções</a>
+        <a href="#portfolio" class="text-white/80 hover:text-white">Portfólio</a>
+        <a href="#sobre" class="text-white/80 hover:text-white">Sobre</a>
+        <a href="#contato" class="text-white/80 hover:text-white">Contato</a>
+        <a href="#orcamento" class="rounded-xl px-4 py-2 shadow-sm font-semibold text-[#0B1220]" style="background-color:#00CFFF">Pedir Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden text-center">
+    <div class="absolute inset-0 -z-10" style="background:
+      radial-gradient(60% 60% at 20% 20%, rgba(0,207,255,0.25) 0%, rgba(0,207,255,0) 60%),
+      radial-gradient(40% 40% at 80% 30%, rgba(106,0,255,0.25) 0%, rgba(106,0,255,0) 60%)"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <div class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium mb-4" style="background-color:rgba(0,207,255,0.12);color:#00CFFF">
+        <span class="inline-block h-2 w-2 rounded-full" style="background-color:#00CFFF"></span>
+        Engenharia • IoT • Automação • Web
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight text-white">
+        Inovação e Tecnologia para <span style="color:#00CFFF">Indústria</span> e <span style="color:#00CFFF">Residências</span>
+      </h1>
+      <p class="mt-4 text-lg mx-auto max-w-2xl text-white/80">
+        Projetamos e entregamos soluções completas em <strong>Projetos IoT</strong>, <strong>Automação Residencial</strong>,
+        <strong> Automação Industrial</strong> e <strong>Criação de Sites</strong> de alta performance.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="#orcamento" class="px-5 py-3 rounded-xl font-medium shadow text-[#0B1220]" style="background-color:#00CFFF">Começar um projeto</a>
+        <a href="#pilares" class="px-5 py-3 rounded-xl font-medium border" style="border-color:#00CFFF;color:#00CFFF">Ver soluções</a>
+      </div>
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
+        <a href="#iot" class="rounded-xl px-4 py-2 text-sm text-center border" style="border-color:#00CFFF;color:#00CFFF">Projetos IoT</a>
+        <a href="#residencial" class="rounded-xl px-4 py-2 text-sm text-center border" style="border-color:#00CFFF;color:#00CFFF">Automação Residencial</a>
+        <a href="#industrial" class="rounded-xl px-4 py-2 text-sm text-center border" style="border-color:#00CFFF;color:#00CFFF">Automação Industrial</a>
+        <a href="#sites" class="rounded-xl px-4 py-2 text-sm text-center border" style="border-color:#00CFFF;color:#00CFFF">Criação de Sites</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pilares -->
+  <section id="pilares" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white">Soluções</h2>
+      <p class="mt-2 text-white/70 mx-auto max-w-2xl">Quatro frentes claras, conteúdo centralizado e navegação objetiva.</p>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card template repeated -->
+        <div id="iot" class="rounded-2xl border shadow-sm p-6 hover:shadow-md transition" style="background:rgba(255,255,255,0.03);border-color:#2b3750">
+          <h3 class="text-xl font-semibold mb-2" style="color:#00CFFF">Projetos IoT</h3>
+          <p class="text-white/80">Do sensor à nuvem: telemetria, dashboards e integrações.</p>
+          <ul class="mt-4 space-y-2 text-sm text-white/80 list-disc list-inside">
+            <li>Edge + MQTT/REST/OPC UA</li>
+            <li>Dashboards e alertas</li>
+            <li>Segurança, OTA e logs</li>
+          </ul>
+          <a href="#orcamento" class="inline-block mt-6 rounded-lg px-4 py-2 text-sm font-semibold text-[#0B1220]" style="background-color:#00CFFF">Quero essa solução</a>
+        </div>
+        <div id="residencial" class="rounded-2xl border shadow-sm p-6 hover:shadow-md transition" style="background:rgba(255,255,255,0.03);border-color:#2b3750">
+          <h3 class="text-xl font-semibold mb-2" style="color:#00CFFF">Automação Residencial</h3>
+          <p class="text-white/80">Conforto, eficiência e segurança com Matter/ESP/Node-RED.</p>
+          <ul class="mt-4 space-y-2 text-sm text-white/80 list-disc list-inside">
+            <li>Iluminação, clima e cenas</li>
+            <li>Assistentes e voz</li>
+            <li>Energia e monitoramento</li>
+          </ul>
+          <a href="#orcamento" class="inline-block mt-6 rounded-lg px-4 py-2 text-sm font-semibold text-[#0B1220]" style="background-color:#00CFFF">Quero essa solução</a>
+        </div>
+        <div id="industrial" class="rounded-2xl border shadow-sm p-6 hover:shadow-md transition" style="background:rgba(255,255,255,0.03);border-color:#2b3750">
+          <h3 class="text-xl font-semibold mb-2" style="color:#00CFFF">Automação Industrial</h3>
+          <p class="text-white/80">Integração de CLP, IHM e SCADA com protocolos industriais.</p>
+          <ul class="mt-4 space-y-2 text-sm text-white/80 list-disc list-inside">
+            <li>Comissionamento e retrofit</li>
+            <li>Modbus/Profibus/Profinet</li>
+            <li>Documentação e painéis</li>
+          </ul>
+          <a href="#orcamento" class="inline-block mt-6 rounded-lg px-4 py-2 text-sm font-semibold text-[#0B1220]" style="background-color:#00CFFF">Quero essa solução</a>
+        </div>
+        <div id="sites" class="rounded-2xl border shadow-sm p-6 hover:shadow-md transition" style="background:rgba(255,255,255,0.03);border-color:#2b3750">
+          <h3 class="text-xl font-semibold mb-2" style="color:#00CFFF">Criação de Sites</h3>
+          <p class="text-white/80">Sites rápidos, responsivos e preparados para SEO.</p>
+          <ul class="mt-4 space-y-2 text-sm text-white/80 list-disc list-inside">
+            <li>Landing pages e portais</li>
+            <li>Integrações com APIs</li>
+            <li>Hospedagem e domínio</li>
+          </ul>
+          <a href="#orcamento" class="inline-block mt-6 rounded-lg px-4 py-2 text-sm font-semibold text-[#0B1220]" style="background-color:#00CFFF">Quero essa solução</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="orcamento" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl p-10 md:p-14 shadow text-center border" style="background:linear-gradient(135deg,#00CFFF33,#6A00FF33);border-color:#2b3750">
+        <h3 class="text-2xl font-bold text-white">Quer um plano para o seu projeto?</h3>
+        <p class="mt-2 text-white/80">Descreva o objetivo, prazos e orçamento. Respondemos rapidamente.</p>
+        <div class="mt-6 flex justify-center gap-3">
+          <a href="#contato" class="px-5 py-3 rounded-xl font-semibold text-[#0B1220]" style="background-color:#00CFFF">Falar agora</a>
+          <a href="#pilares" class="px-5 py-3 rounded-xl font-semibold border" style="border-color:#00CFFF;color:#00CFFF">Ver soluções</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white">Entre em contato</h2>
+      <p class="mt-2 text-white/70">Sem burocracia. Fale direto com quem executa.</p>
+      <div class="mt-10 grid lg:grid-cols-2 gap-10 items-start">
+        <div class="text-white/80">
+          <div class="mt-6 space-y-3 text-sm">
+            <p>📧 <span class="text-white">contato@heitronix.tech</span></p>
+            <p>📞 <span class="text-white">+55 (51) 995713807</span></p>
+            <p>🌐 <span class="text-white">heitronix.tech</span></p>
+          </div>
+        </div>
+        <form action="https://formsubmit.co/contato@heitronix.tech" method="POST" class="rounded-2xl border shadow-sm p-6" style="background:rgba(255,255,255,0.03);border-color:#2b3750">
+          <input type="hidden" name="_next" value="https://heitronix.tech/obrigado.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="grid sm:grid-cols-2 gap-4 text-left">
+            <div>
+              <label class="text-sm font-medium text-white">Nome</label>
+              <input name="nome" class="mt-1 w-full rounded-xl border px-3 py-2 bg-transparent text-white placeholder-white/40 focus:outline-none focus:ring-2" style="border-color:#334155" placeholder="Seu nome" required/>
+            </div>
+            <div>
+              <label class="text-sm font-medium text-white">Email</label>
+              <input name="email" type="email" class="mt-1 w-full rounded-xl border px-3 py-2 bg-transparent text-white placeholder-white/40 focus:outline-none focus:ring-2" style="border-color:#334155" placeholder="seu@email.com" required/>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium text-white">Assunto</label>
+              <input name="assunto" class="mt-1 w-full rounded-xl border px-3 py-2 bg-transparent text-white placeholder-white/40 focus:outline-none focus:ring-2" style="border-color:#334155" placeholder="Ex.: Automação residencial com Matter" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium text-white">Mensagem</label>
+              <textarea name="mensagem" rows="4" class="mt-1 w-full rounded-xl border px-3 py-2 bg-transparent text-white placeholder-white/40 focus:outline-none focus:ring-2" style="border-color:#334155" placeholder="Conte o objetivo e prazo, se houver." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="mt-4 w-full rounded-xl font-semibold py-3 text-[#0B1220]" style="background-color:#00CFFF">Enviar mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t" style="border-color:#1b2740">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="/assets/logo.png" alt="Heitronix.tech" class="h-6 w-auto" />
+        <span class="text-sm text-white/70">© <span id="y"></span> Heitronix.tech • Todos os direitos reservados</span>
+      </div>
+      <div class="text-sm text-white/70 flex gap-4">
+        <a href="#pilares" class="hover:text-white">Soluções</a>
+        <a href="#sobre" class="hover:text-white">Sobre</a>
+        <a href="#contato" class="hover:text-white">Contato</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
