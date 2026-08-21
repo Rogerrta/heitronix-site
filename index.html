@@ -25,6 +25,29 @@
         <a href="#contato" class="text-white/80 hover:text-white">Contato</a>
         <a href="#orcamento" class="rounded-xl px-4 py-2 shadow-sm font-semibold text-[#0B1220]" style="background-color:#00CFFF">Pedir Orçamento</a>
       </nav>
+
+      <!-- Botão menu mobile -->
+      <button id="menuBtn"
+              class="md:hidden text-white text-2xl"
+              aria-label="Abrir menu"
+              aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4">
+      <div class="flex flex-col gap-3 text-sm font-medium">
+        <a href="#pilares" class="text-white/80 hover:text-white">Soluções</a>
+        <a href="#portfolio" class="text-white/80 hover:text-white">Portfólio</a>
+        <a href="#sobre" class="text-white/80 hover:text-white">Sobre</a>
+        <a href="#contato" class="text-white/80 hover:text-white">Contato</a>
+        <a href="#orcamento"
+           class="rounded-xl px-4 py-2 text-center font-semibold text-[#0B1220]"
+           style="background-color:#00CFFF">
+          Pedir Orçamento
+        </a>
+      </div>
     </div>
   </header>
 
@@ -179,5 +202,25 @@
     </div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+
+      const aberto = !mobileMenu.classList.contains('hidden');
+      menuBtn.setAttribute('aria-expanded', aberto);
+      menuBtn.textContent = aberto ? '✕' : '☰';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.textContent = '☰';
+      });
+    });
+  </script>
 </body>
 </html>
